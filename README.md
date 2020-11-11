@@ -19,7 +19,7 @@ The datasets used for the experiments are available:
 
 # Instructions
 
-On the folder 'train paper networks' you can find the python scripts we used to train the networks in the paper. To retrain those, just change the dataset folder to where your data is stored.
+In the folder 'train paper networks' you can find the python scripts we used to train the networks in the paper. To retrain those, just change the dataset folder to where your data is stored.
 
 To train new networks, just run `python train.py --experiment_name awesome_name --data_folder /path/to/your/mp3/or/wav/data/`. We trained GACELA for 7 days on a   NVIDIA Titan pascal X, and the trained models occupy 250Mb. At inference time, GACELA's generator produces a batch of 64 gaps in 14ms.
 

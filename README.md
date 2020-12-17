@@ -1,7 +1,7 @@
-# [GACELA - Generative adversarial context encoder for audio inpainting](https://arxiv.org/abs/2005.05032)
+# [GACELA - Generative adversarial context encoder for audio inpainting](https://ieeexplore.ieee.org/document/9257074)
 
 
-We introduce GACELA, a generative adversarial network (GAN) designed to restore missing musical audio data with a duration ranging between hundreds of milliseconds to a few seconds, i.e., to perform long-gap audio inpainting. While previous work either addressed shorter gaps or relied on exemplars by copying available information from other signal parts, GACELA addresses the inpainting of long gaps in two aspects. First, it considers various time scales of audio information by relying on five parallel discriminators with increasing resolution of receptive fields. Second, it is conditioned not only on the available information surrounding the gap, i.e., the context, but also on the latent variable of the conditional GAN. This addresses the inherent multi-modality of audio inpainting at such long gaps and provides the option of user-defined inpainting. GACELA was tested in listening tests on music signals of varying complexity and gap durations ranging from 375ms to 1500ms. While our subjects were often able to detect the inpaintings, the severity of the artifacts decreased from unacceptable to mildly disturbing. GACELA represents a framework capable to integrate future improvements such as processing of more auditory-related features or more explicit musical features.  
+We introduce GACELA, a conditional generative adversarial network (cGAN) designed to restore missing audio data with durations ranging between hundreds of milliseconds and a few seconds, i.e., to perform long-gap audio inpainting. While previous work either addressed shorter gaps or relied on exemplars by copying available information from other signal parts, GACELA addresses the inpainting of long gaps in two aspects. First, it considers various time scales of audio information by relying on five parallel discriminators with increasing resolution of receptive fields. Second, it is conditioned not only on the available information surrounding the gap, i.e., the context, but also on the latent variable of the cGAN. This addresses the inherent multi-modality of audio inpainting for such long gaps while providing the user with different inpainting options. GACELA was evaluated in listening tests on music signals of varying complexity and varying gap durations from 375~ms to 1500~ms. Under laboratory conditions, our subjects were often able to detect the inpainting. However, the severity of the inpainted artifacts was rated between not disturbing and mildly disturbing. GACELA represents a framework capable of integrating future improvements such as processing of more auditory-related features or explicit musical features. Our software and trained models, complemented by instructive examples, are available online. 
 
 
 # Installation
@@ -27,7 +27,7 @@ To test GACELA, either use the `Test GACELA` notebook in the main folder, or use
 
 ## Resources
 
-- The pre-print can be read on [arxiv](https://arxiv.org/abs/2005.05032).
+- The paper was published on IEEE Journal of Selected Topics in Signal Processing [IEEE](https://ieeexplore.ieee.org/document/9257074).
 - To hear examples please go to the [accompanying website](https://andimarafioti.github.io/GACELA/).
 
 - The checkpoints used for the evaluation of the [paper](https://arxiv.org/abs/2005.05032) can be downloaded [here](https://zenodo.org/record/3897144). Please extract the archives in the folder `saved_results`. Alternatively, you can simply run the script `download_checkpoints.py`:

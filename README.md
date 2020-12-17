@@ -30,7 +30,7 @@ To test GACELA, either use the `Test GACELA` notebook in the main folder, or use
 - The paper was published on IEEE Journal of Selected Topics in Signal Processing [IEEE](https://ieeexplore.ieee.org/document/9257074).
 - To hear examples please go to the [accompanying website](https://andimarafioti.github.io/GACELA/).
 
-- The checkpoints used for the evaluation of the [paper](https://arxiv.org/abs/2005.05032) can be downloaded [here](https://zenodo.org/record/3897144). Please extract the archives in the folder `saved_results`. Alternatively, you can simply run the script `download_checkpoints.py`:
+- The checkpoints used for the evaluation of the [paper](https://ieeexplore.ieee.org/document/9257074) can be downloaded [here](https://zenodo.org/record/3897144). Please extract the archives in the folder `saved_results`. Alternatively, you can simply run the script `download_checkpoints.py`:
 ```
 python download_checkpoints.py
 ```
